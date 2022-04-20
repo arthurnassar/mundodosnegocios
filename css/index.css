@@ -747,5 +747,5 @@ li {
 }
 
 .smartplayer-blocked {
-  display: none;
+    height: fit-content;
 }
