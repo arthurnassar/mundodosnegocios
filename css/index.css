@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&family=Roboto+Slab&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&family=Moulpali&display=swap');
 
 :root {
     --bg-light-blue: #eaf1fd;
@@ -8,7 +6,7 @@
     --text-neon-blue: #00ffff;
     --button-standard-yellow: #ffd700;
     --red-lines-price-time: #ff0000;
-    --grey-footer: #626262;
+    --grey-footer: #444343;
     --grey-text: #7c7c7c
 }
 
@@ -16,6 +14,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    scroll-behavior: smooth !important;
+
 }
 
 .bg-light-blue {
@@ -281,13 +282,16 @@ body {
     margin-bottom: 5%
 }
 
-.card {
+.servicos .card {
     -webkit-box-shadow: 0px 5px 11px 2px #FF0000;
     box-shadow: 0px 5px 11px 2px #FF0000;
     min-height: 218px;
     margin-bottom: 10px;
 }
 
+.card {
+    border-radius: 15px;
+}
 
 .btn:hover {
     cursor: pointer;
@@ -301,10 +305,6 @@ body {
     box-shadow: 0 0 10px 0 #fff;
     background-color: #000;
     color: #fff
-}
-
-.bonus .card .card-body {
-    min-height: 250px
 }
 
 .card-title {
@@ -517,19 +517,12 @@ li {
 }
 
 .bonus .card {
-    margin-bottom: 8%;
-    margin-top: 6%;
-    border-radius: 30px;
-    box-shadow: 0 0 10px 0 #6297ec
+    -webkit-box-shadow: 0px 5px 11px 2px #FF0000;
+    box-shadow: 0px 5px 11px 2px #FF0000;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.bonus .card-body {
-    min-height: 250px
-}
-
-.bonus .card {
-    min-height: 350px
-}
 
 .bonus .col-md-3 {
     background-color: #6298;
@@ -632,6 +625,7 @@ li {
     text-align: center;
     margin-top: 2%
 }
+
 
 .footer a {
     margin-bottom: 1%;
@@ -748,4 +742,8 @@ li {
 
 .smartplayer-blocked {
     height: fit-content;
+}
+
+.garantia-7-dias {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
 }
